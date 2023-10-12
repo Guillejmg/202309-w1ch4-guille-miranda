@@ -6,36 +6,60 @@ body {
   font-family: "Nunito", sans-serif;
 }
 
-header {
-  box-shadow: 4px 2px 27px -17px rgb(0, 0, 0);
-  -webkit-box-shadow: 4px 2px 27px -17px rgb(0, 0, 0);
-  -moz-box-shadow: 4px 2px 27px -17px rgb(0, 0, 0);
+.top {
+  box-shadow: 0px 0px 27px -17px rgb(0, 0, 0);
+  -webkit-box-shadow: 0px 0px 27px -17px rgb(0, 0, 0);
+  -moz-box-shadow: 0px 0px 27px -17px rgb(0, 0, 0);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-header img {
+.top .buy:hover {
+  padding: 0.25rem;
+  border: 1px solid black;
+  border-radius: 0% 15% 15% 15%;
+  background-color: orange;
+  color: white;
+}
+.top img {
   justify-content: flex-start;
   width: 50px;
   height: 50px;
 }
-header ul {
+.top ul {
   display: flex;
   flex-direction: row;
   font-size: small;
   gap: 2rem;
   font-weight: 600;
 }
-header ul .select {
-  display: none;
-}
-header ul .select:hover .select {
-  display: block;
-}
-header ul:hover {
+.top ul .boarding:hover {
   color: orange;
   text-decoration: underline;
+}
+.top ul .toys:hover {
+  color: orange;
+  text-decoration: underline;
+}
+.top ul .school:hover {
+  color: orange;
+  text-decoration: underline;
+}
+.top .select {
+  display: none;
+}
+.top .select:hover {
+  display: block;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 h2 {
