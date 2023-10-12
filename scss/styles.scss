@@ -4,6 +4,50 @@
 body{
     font-family: 'Nunito', sans-serif;
 }
+header{
+    box-shadow: 4px 2px 27px -17px rgba(0,0,0,1);
+    -webkit-box-shadow: 4px 2px 27px -17px rgba(0,0,0,1);
+    -moz-box-shadow: 4px 2px 27px -17px rgba(0,0,0,1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+    img{
+        justify-content: flex-start;
+        width: 50px;
+        height: 50px;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: row;
+        font-size: small;
+        gap: 2rem;
+        font-weight: 600;
+        
+        .select{
+            display: none;
+            &:hover{
+                .select{
+                    display: block;
+                }
+            } 
+           }
+
+        &:hover{
+            color: orange;
+            text-decoration: underline;
+        }
+        
+        }
+    }
+    
+
 h2{
     font-family: 'Nunito', sans-serif;
+}
+ul{
+    list-style-type: none;
+ 
 }
